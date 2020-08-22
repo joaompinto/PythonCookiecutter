@@ -1,0 +1,10 @@
+{
+    "directory_name": "project_directory",
+    "package_name": "package_name",
+    "author_name": "João Pinto",
+    "author_email": "lamego.pinto@gmail.com",
+    "repository_url": "https://github.com/joaompinto/",
+    "_copy_without_render": [
+        "*.yaml"
+    ]
+}
