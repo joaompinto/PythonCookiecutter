@@ -1,13 +1,34 @@
 # PythonCookiecutter 
 
+This repository provides a cookicutter recipe for a new package.
+
+What is included:
+- automatic versioning using [setuptools_scm](https://pypi.org/project/setuptools-scm/)
+- pre-commit hooks:
+    - black
+    - end-of-file-fixer
+    - flake8
+    - mixed-line-ending
+    - tox
+    - trailing-whitespace
+- tox using pytest
+- github actions for automated pipy releases
+- vscode settings
+    - exclude build test and cache directories
+    - setup "Run" action to run pytest
+
 ## How to use:
 ```sh
 python3 -m pip install --user --upgrade pip setuptools wheel
 python3 -m pip install --user cookiecutter
+
 cookiecutter git@github.com:joaompinto/PythonCookiecutter.git
+
 cd project_directory
 git init
 git add .
-git commit -a -m "Initial commit
+git commit -a -m "Initial commit"
+python3 -m pip install --user -r requirements-dev.txt
+pre-commit install
 tox
 ```
