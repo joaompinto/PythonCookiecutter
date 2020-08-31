@@ -1,5 +1,5 @@
 from optparse import OptionParser
-from setuptools_scm import get_version
+from .version import version
 
 
 def arg_parser():
