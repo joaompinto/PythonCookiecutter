@@ -5,6 +5,9 @@ from setuptools import setup
 SCRIPT_DIR = Path(__file__).parent
 
 
+scm_version_options = {"write_to": "{{ cookiecutter.package_name }}/version.py"}
+
+
 def setup_package():
 
     # Get readme
@@ -17,7 +20,7 @@ def setup_package():
         requirements = f.read()
 
     setup(
-        use_scm_version=True,
+        use_scm_version=scm_version_options,
         long_description=readme,
         long_description_content_type="text/markdown",
         install_requires=[x for x in requirements.splitlines() if x],
