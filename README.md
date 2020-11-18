@@ -1,4 +1,4 @@
-# PythonCookiecutter 
+# PythonCookiecutter
 
 This repository provides a cookicutter recipe for a new package.
 
@@ -19,8 +19,7 @@ What is included:
 
 ## How to use:
 ```sh
-python3 -m pip install --user --upgrade pip setuptools wheel
-python3 -m pip install --user cookiecutter
+pip install cookiecutter
 
 cookiecutter git@github.com:joaompinto/PythonCookiecutter.git
 
