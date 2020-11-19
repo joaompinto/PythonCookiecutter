@@ -27,7 +27,7 @@ cd project_directory
 git init
 git add .
 git commit -a -m "Initial commit"
-python3 -m pip install --user -r requirements-dev.txt
+pip install --user -r requirements-dev.txt
 pre-commit install
 tox
 ```
