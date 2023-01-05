@@ -38,6 +38,5 @@ repos:
     # Ruff version.
     rev: 'v0.0.191'
     hooks:
-        - id: ruff
-        # Respect `exclude` and `extend-exclude` settings.
-        args: ["--force-exclude"]
+    - id: ruff
+
