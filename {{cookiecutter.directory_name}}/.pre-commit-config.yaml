@@ -34,7 +34,10 @@ repos:
     hooks:
     - id: black
 
--   repo: https://github.com/pycqa/flake8
-    rev: '4.0.1'
+-   repo: https://github.com/charliermarsh/ruff-pre-commit
+    # Ruff version.
+    rev: 'v0.0.191'
     hooks:
-    -   id: flake8
+        - id: ruff
+        # Respect `exclude` and `extend-exclude` settings.
+        args: ["--force-exclude"]
