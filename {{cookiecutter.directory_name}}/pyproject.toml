@@ -5,11 +5,5 @@ requires = ["setuptools>=42", "wheel", "setuptools_scm[toml]>=3.4"]
 [tool.setuptools_scm]
 write_to = "{{ cookiecutter.package_name }}/version.py"
 
-[tool.ruff]
-line-length = 120
-
-[tool.ruff.mccabe]
-max-complexity = 10
-
 [tool.isort]
 profile = "black"
