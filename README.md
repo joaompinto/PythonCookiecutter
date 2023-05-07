@@ -7,9 +7,9 @@ What is included:
 - pre-commit hooks:
     - black
     - end-of-file-fixer
-    - flake8
     - mixed-line-ending
-    - tox
+    - pytest
+    - ruff
     - trailing-whitespace
 - tox using pytest
 - github actions for automated pipy releases
