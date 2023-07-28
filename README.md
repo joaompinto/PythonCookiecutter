@@ -21,7 +21,7 @@ What is included:
 ```sh
 pip install cookiecutter
 
-cookiecutter git@github.com:joaompinto/PythonCookiecutter.git
+cookiecutter https://github.com/joaompinto/PythonCookiecutter.git
 
 cd project_directory
 git init
