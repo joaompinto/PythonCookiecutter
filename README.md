@@ -12,22 +12,23 @@ What is included:
     - ruff
     - trailing-whitespace
 - invoke tasks: setup, test, test-only, cover, cover-only
-- github actions for automated pipy releases
+- github actions for automated pipy and GH releases
 - vscode settings
     - exclude build test and cache directories
-    - setup "Run" action to run pytest
+
 
 ## How to use:
 ```sh
 pip install cruft
 
-cruft https://github.com/joaompinto/PythonCookiecutter.git
+cruft create https://github.com/joaompinto/PythonCookiecutter.git
 
 cd project_directory
 git init
+git branch -m main
 git add .
 git commit -a -m "Initial commit"
-pip install --user -r requirements-dev.txt
+pip install -r requirements-dev.txt
 pre-commit install
 tox
 ```
