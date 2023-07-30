@@ -3,28 +3,28 @@ from invoke import task
 
 @task
 def docker(c):
-    c.run("sh develop/docker-bash", pty=True)
+    c.run("sh develop/docker-bash")
 
 
 @task
 def setup(c):
     print("Installing requirements...")
-    c.run("pip install -r requirements-dev.txt", hide=True)
+    c.run("pip install -r requirements.txt -r requirements-dev.txt", hide=True)
 
 
 @task
 def test(c):
-    c.run("python -m pytest -x tests/", pty=True)
+    c.run("python -m pytest -x tests/")
 
 
 @task
 def test_only(c, filter: str):
-    c.run(f"python -m pytest -x -v -s -k {filter}", pty=True)
+    c.run(f"python -m pytest -x -v -s -k {filter}")
 
 
 @task
 def cover(c):
-    c.run("python -m pytest -x --cov-report term-missing --cov={{ cookiecutter.package_name }} tests", pty=True)
+    c.run("python -m pytest -x --cov-report term-missing --cov={{ cookiecutter.package_name }} tests")
 
 
 @task
