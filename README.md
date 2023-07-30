@@ -8,10 +8,10 @@ What is included:
     - black
     - end-of-file-fixer
     - mixed-line-ending
-    - pytest
+    - pytest and pytes-tcover
     - ruff
     - trailing-whitespace
-- tox using pytest
+- invoke tasks: setup, test, test-only, cover, cover-only
 - github actions for automated pipy releases
 - vscode settings
     - exclude build test and cache directories
@@ -19,9 +19,9 @@ What is included:
 
 ## How to use:
 ```sh
-pip install cookiecutter
+pip install cruft
 
-cookiecutter https://github.com/joaompinto/PythonCookiecutter.git
+cruft https://github.com/joaompinto/PythonCookiecutter.git
 
 cd project_directory
 git init

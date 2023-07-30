@@ -3,5 +3,4 @@ ruff
 pre-commit
 pytest
 setuptools_scm
-tox
 wheel
