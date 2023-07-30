@@ -30,5 +30,5 @@ git add .
 git commit -a -m "Initial commit"
 pip install -r requirements-dev.txt
 pre-commit install
-tox
+invoke test
 ```
